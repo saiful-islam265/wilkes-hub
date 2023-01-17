@@ -1,0 +1,180 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body, div, span, img, 
+ol, ul, li, a, p, h1, h2, h3, 
+h4, h5, h6, option, legend, label, 
+table, th, td, tr, article, aside, 
+caption, figure, footer, header, hgroup, 
+mark, nav, section, time, audio, video {
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    outline: 0;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-size: 100%;
+	overflow-y: scroll; 
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+
+.tooltip {
+
+	.tooltip-inner {
+		border: 0;
+		color: $white;
+		min-width: 120px;
+		padding: 6px 10px;
+		background-color: #AA4098;
+
+		.title {
+			font: 600 14px/18px $pop;
+		}
+	}
+
+	&.tooltip-files {
+
+		.tooltip-inner {
+			max-width: 140px;
+			font-size: 16px;
+			font-weight: 800;
+			text-align: left;
+			line-height: 21px;
+			border-radius: 4px;
+			padding: 10px 10px 10px;
+			box-shadow: 0 12px 24px rgba(0,0,0,.16);
+
+			.title {
+				margin-bottom: 6px;
+				font: 600 12px/18px $pop;
+			}
+
+
+			ul.tooltip-dropdown {
+				list-style: none;
+
+				li {
+					font: 400 12px/18px $pop;
+					position: relative;
+
+					&:before {
+						content: '';
+						width: 8px;
+						height: 8px;
+						margin-right: 4px;
+						display: inline-block;
+						border-radius: 500px;
+						background-color: #D5D7E3;
+					}
+				}
+			}
+		}
+
+	}
+
+	&.show {
+	  opacity: 1;
+	}
+
+	.arrow {
+	  position: absolute;
+	  display: block;
+	  width: 0.8rem;
+	  height: 0.4rem;
+	}
+
+	.arrow::before {
+	  position: absolute;
+	  content: "";
+	  border-color: transparent;
+	  border-style: solid;
+	}
+}
+.bs-tooltip-auto[x-placement^=top],
+.bs-tooltip-top {
+  padding: 0.4rem 0;
+}
+
+.bs-tooltip-auto[x-placement^=top] .arrow,
+.bs-tooltip-top .arrow {
+  bottom: 0;
+}
+
+.bs-tooltip-auto[x-placement^=top] .arrow::before,
+.bs-tooltip-top .arrow::before {
+  top: 0;
+  border-width: 0.4rem 0.4rem 0;
+  border-top-color: #AA4098;
+}
+
+.bs-tooltip-auto[x-placement^=right],
+.bs-tooltip-right {
+  padding: 0 0.4rem;
+}
+
+.bs-tooltip-auto[x-placement^=right] .arrow,
+.bs-tooltip-right .arrow {
+  left: 0;
+  width: 0.4rem;
+  height: 0.8rem;
+}
+
+.bs-tooltip-auto[x-placement^=right] .arrow::before,
+.bs-tooltip-right .arrow::before {
+  right: 0;
+  border-width: 0.4rem 0.4rem 0.4rem 0;
+  border-right-color: #AA4098;
+}
+
+.bs-tooltip-auto[x-placement^=bottom],
+.bs-tooltip-bottom {
+  padding: 0.4rem 0;
+}
+
+.bs-tooltip-auto[x-placement^=bottom] .arrow,
+.bs-tooltip-bottom .arrow {
+  top: 0;
+}
+
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before,
+.bs-tooltip-bottom .arrow::before {
+  bottom: 0;
+  border-width: 0 0.4rem 0.4rem;
+  border-bottom-color: #AA4098;
+}
+
+.bs-tooltip-auto[x-placement^=left],
+.bs-tooltip-left {
+  padding: 0 0.4rem;
+}
+
+.bs-tooltip-auto[x-placement^=left] .arrow,
+.bs-tooltip-left .arrow {
+  right: 0;
+  width: 0.4rem;
+  height: 0.8rem;
+}
+
+.bs-tooltip-auto[x-placement^=left] .arrow::before,
+.bs-tooltip-left .arrow::before {
+  left: 0;
+  border-width: 0.4rem 0 0.4rem 0.4rem;
+  border-left-color: #AA4098;
+}

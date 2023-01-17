@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>Dashboard | Local Delevery</title>
+
+		<!-- Bootstrap -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+		<link href="../assets/css/plugins.css" rel="stylesheet">
+		<link href="../style.css" rel="stylesheet">
+
+	</head>
+	<body>
+		<div class="hoodslyhub-user-dashboard">
+			
+			<header class="dashboard__header">
+				<nav class="navbar navbar-expand">
+					<div class="container-fluid">
+						<div class="navbar-header">
+							<a href="#" class="navbar-toggle">
+								<span class="icon-bar"></span>
+							  	<span class="icon-bar"></span>
+							  	<span class="icon-bar"></span>
+						  	</a>
+
+							<a class="navbar-brand" href="index.html">
+								<img src="../assets/images/logo.svg" class="img-fluid" alt="logo">
+							</a>
+						</div>
+
+						<div class="navbar-collapse">
+							<ul class="navbar-nav ml-auto">
+								<li><a href="#" class="icon-paste"></a></li>
+								<li><a href="#" class="icon-email-open"></a></li>
+								<li><a href="#" class="icon-notifications"></a></li>
+							</ul>
+						</div>
+					</div>
+				</nav><!-- /nav -->
+			</header><!-- /header -->
+			<div class="header-gutter"></div>
+
+			<div class="dashboard__vertical-navbar" id="simplebar">
+				<nav class="vertical-navbar">
+					<ul class="navbar-nav">
+						<li>
+							<a href="#">
+								<span class="icon-wrapper">
+									<i class="icon-home"></i>
+								</span>
+								<span class="text">Dashboard</span>
+							</a>
+						</li>
+						<li>
+							<a href="order-detail.html">
+								<span class="icon-wrapper">
+									<i class="icon-line-chart"></i>
+								</span>
+								<span class="text">Orders</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon-wrapper">
+									<i class="icon-email"></i>
+								</span>
+								<span class="text">Damages</span>
+								<span class="badge">16</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon-wrapper">
+									<i class="icon-file"></i>
+								</span>
+								<span class="text">Wholesale Accounts</span>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="active">
+								<span class="icon-wrapper">
+									<i class="icon-users"></i>
+								</span>
+								<span class="text">Local Delivery</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon-wrapper">
+									<i class="icon-message"></i>
+								</span>
+								<span class="text">Video Chats</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon-wrapper">
+									<i class="icon-calendar"></i>
+								</span>
+								<span class="text">In Stock Hoods</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon-wrapper">
+									<i class="icon-help"></i>
+								</span>
+								<span class="text">Ventilation</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon-wrapper">
+									<i class="icon-setting"></i>
+								</span>
+								<span class="text">Settings</span>
+							</a>
+						</li>
+					</ul>
+
+					<a href="#" class="user-meta mt-auto">
+						<figure class="media">
+							<img src="../assets/images/user.jpg" alt="">
+						</figure>
+
+						<div class="text">
+							<div class="name">Mitchell Williamson</div>
+							<div class="user-id">Customer ID#01223</div>
+						</div>
+					</a>
+				</nav>
+			</div>
+
+			<div class="dashboard-page">
+				<div class="container-fluid">
+					<div class="row lr-10">
+						<div class="col-xl-8 d-flex">
+							<div class="dashboard-page__order">
+								<div class="dashboard-page__order-header">
+									<div class="navbar-header">
+										<h6 class="title">Orders</h6>
+									</div>
+
+									<div class="navbar-collapse">
+										<ul class="navbar-nav ml-auto">
+											<li class="dropdown">
+												<a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Create</a>
+
+												<ul class="dropdown-menu">
+													<li><a href="#">New Order</a></li>
+													<li><a href="#">Create Invoice</a></li>
+												</ul>
+											</li>
+											<li><a href="#" class="icon-setting-sliders"></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="dashboard-page__order-body">
+									<table class="table table-order">
+									  <thead>
+									    <tr>
+									      <th scope="col">Order Id</th>
+									      <th scope="col">Customer Info</th>
+									      <th scope="col">Order Status</th>
+									      <th scope="col">Shop</th>
+									      <th scope="col">Estimated Shipping Date</th>
+									      <th scope="col">Order Source</th>
+									      <th scope="col">Items</th>
+									      <th scope="col">Files</th>
+									      <th scope="col">Actions</th>
+									    </tr>
+									  </thead>
+									  <tbody>
+									    <tr style="background-color: #4747471a;">
+									      <td data-title="Order Id">#25614</td>
+									      <td data-title="Customer Info">Ryan Hossann</td>
+									      <td data-title="Order Status">
+									      	<button class="btn btn-violet">Assembly</button>
+									      </td>
+									      <td data-title="Shop" data-toggle="tooltip" title='<h6 class="title">WRH</h6>'>
+									      	<figure class="media-shop">
+									      		<img src="../assets/images/ryan.jpg" class="img-fluid" alt="">
+									      	</figure>
+									      </td>
+									      <td data-title="Estimated Shipping Date">January 31st 2022 (10 days)</td>
+									      <td data-title="Order Source">Hoodsly.com</td>
+									      <td data-title="Items">Items</td>
+									      <td class="files" data-title="Files" data-toggle="tooltip" data-placement="right" title='<h6 class="title">Order Files</h6><ul class="tooltip-dropdown"><li>BOL</li><li>Shipping Label</li><li>Proof Of Drop Off</li> <li>Damage  Photos</li></ul>'>Files</td>
+									      <td data-title="Actions" class="action-dropdown dropdown">
+									      	<div role="button" class="icon-dots" data-toggle="dropdown"><span></span><span></span><span></span></div>
+									      	<ul class="dropdown-menu dropdown-menu-right">
+									      		<li><a href="#">View</a></li>
+									      		<li><a href="#">Delete</a></li>
+									      	</ul>
+									      </td>
+									    </tr>
+
+									    <tr style="background-color: #FF00001a;">
+									      <td data-title="Order Id">#30524</td>
+									      <td data-title="Customer Info">Sally Jane</td>
+									      <td data-title="Order Status">
+									      	<button class="btn btn-bluesky">Sanding</button>
+									      </td>
+									      <td data-title="Shop" data-toggle="tooltip" title='<h6 class="title">WRH</h6>'>
+									      	<figure class="media-shop">
+									      		<img src="../assets/images/ryan.jpg" class="img-fluid" alt="">
+									      	</figure>
+									      </td>
+									      <td data-title="Estimated Shipping Date">January 31st 2022 (10 days)</td>
+									      <td data-title="Order Source">USCD</td>
+									      <td data-title="Items">Items</td>
+									      <td class="files" data-title="Files" data-toggle="tooltip" data-placement="right" title='<h6 class="title">Order Files</h6><ul class="tooltip-dropdown"><li>BOL</li><li>Shipping Label</li><li>Proof Of Drop Off</li> <li>Damage  Photos</li></ul>'>Files</td>
+									      <td data-title="Actions" class="action-dropdown dropdown">
+									      	<div role="button" class="icon-dots" data-toggle="dropdown"><span></span><span></span><span></span></div>
+									      	<ul class="dropdown-menu dropdown-menu-right">
+									      		<li><a href="#">View</a></li>
+									      		<li><a href="#">Delete</a></li>
+									      	</ul>
+									      </td>
+									    </tr>
+
+									    <tr style="background-color: #0E15EE1a;">
+									      <td data-title="Order Id">#31029</td>
+									      <td data-title="Customer Info">John Doe Test</td>
+									      <td data-title="Order Status">
+									      	<button class="btn btn-bluedark">Manual</button>
+									      </td>
+									      <td data-title="Shop" data-toggle="tooltip" title='<h6 class="title">WRH</h6>'>
+									      	<figure class="media-shop">
+									      		<img src="../assets/images/ryan.jpg" class="img-fluid" alt="">
+									      	</figure>
+									      </td>
+									      <td data-title="Estimated Shipping Date">January 31st 2022 (10 days)</td>
+									      <td data-title="Order Source">WWH</td>
+									      <td data-title="Items">Items</td>
+									      <td class="files" data-title="Files" data-toggle="tooltip" data-placement="right" title='<h6 class="title">Order Files</h6><ul class="tooltip-dropdown"><li>BOL</li><li>Shipping Label</li><li>Proof Of Drop Off</li> <li>Damage  Photos</li></ul>'>Files</td>
+									      <td data-title="Actions" class="action-dropdown dropdown">
+									      	<div role="button" class="icon-dots" data-toggle="dropdown"><span></span><span></span><span></span></div>
+									      	<ul class="dropdown-menu dropdown-menu-right">
+									      		<li><a href="#">View</a></li>
+									      		<li><a href="#">Delete</a></li>
+									      	</ul>
+									      </td>
+									    </tr>
+
+									    <tr style="background-color: #0E9CEE1a;">
+									      <td data-title="Order Id">#45875</td>
+									      <td data-title="Customer Info">Jane Sally</td>
+									      <td data-title="Order Status">
+									      	<button class="btn btn-skyblue">Sanding</button>
+									      </td>
+									      <td data-title="Shop" data-toggle="tooltip" title='<h6 class="title">WRH</h6>'>
+									      	<figure class="media-shop">
+									      		<img src="../assets/images/ryan.jpg" class="img-fluid" alt="">
+									      	</figure>
+									      </td>
+									      <td data-title="Estimated Shipping Date">January 31st 2022 (10 days)</td>
+									      <td data-title="Order Source">Hoodsly.com</td>
+									      <td data-title="Items">Items</td>
+									      <td class="files" data-title="Files" data-toggle="tooltip" data-placement="right" title='<h6 class="title">Order Files</h6><ul class="tooltip-dropdown"><li>BOL</li><li>Shipping Label</li><li>Proof Of Drop Off</li> <li>Damage  Photos</li></ul>'>Files</td>
+									      <td data-title="Actions" class="action-dropdown dropdown">
+									      	<div role="button" class="icon-dots" data-toggle="dropdown"><span></span><span></span><span></span></div>
+									      	<ul class="dropdown-menu dropdown-menu-right">
+									      		<li><a href="#">View</a></li>
+									      		<li><a href="#">Delete</a></li>
+									      	</ul>
+									      </td>
+									    </tr>
+									  </tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 d-flex">
+							<div class="dashboard-page__order">
+								<div class="dashboard-page__order-header">
+									<div class="navbar-header">
+										<h6 class="title">Manual Placement</h6>
+									</div>
+
+									<div class="navbar-collapse">
+										<ul class="navbar-nav ml-auto">
+											<li><a href="#" class="icon-setting-sliders"></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="dashboard-page__order-body">
+									<table class="table has--manual-placement">
+									  <thead>
+									    <tr>
+									      <th scope="col">Order Id</th>
+									      <th scope="col">Date Placed</th>
+									      <th scope="col">Order Notes</th>
+									    </tr>
+									  </thead>
+									  <tbody>
+									    <tr style="background-color: #0E15EE1a;">
+									      <td data-title="Order Id">#31029</td>
+									      <td data-title="Date Placed">January 15th 2022</td>
+									      <td data-title="Order Notes">
+									      	<button class="btn btn-border" type="button" data-toggle="collapse" data-target="#notes-1" aria-expanded="false" aria-controls="notes-1">View Notes</button>
+									      </td>
+									    </tr>
+									    <tr class="notes-collapse">
+									      <td colspan="12">
+									      	<div class="notes-collapse__body collapse" id="notes-1">
+									      		<div class="row">
+									      			<div class="col-xl-12 col-lg-12 d-flex">
+									      				<div class="notes-collapse__body-item">
+									      					<div class="entry-title">
+									      						<h6 class="title">Items Orders</h6>
+									      					</div>
+									      					<div class="entry-content">
+									      						<figure class="media">
+									      							<img src="../assets/images/antique-cropped.png"
+																		 class="img-fluid" alt="">
+									      						</figure>
+
+									      						<div class="text">
+									      							<ul class="list-style">
+									      								<li>Curved With Strapping</li>
+									      								<li>Antique White</li>
+									      								<li>30x36</li>
+									      								<li>ZLine 698-28</li>
+									      								<li>Recirculating Vents</li>
+									      								<li>Flat Trim</li>
+									      								<li>Remove Side Trim</li>
+									      								<li>Add Crown Molding</li>
+									      								<li>Rush My Order</li>
+									      							</ul>
+									      						</div>
+									      					</div>
+									      				</div>
+									      			</div>
+									      			<div class="col-xl-6 col-lg-12 d-flex">
+									      				<div class="notes-collapse__body-item">
+									      					<div class="entry-title">
+									      						<h6 class="title">Shipping Info</h6>
+									      					</div>
+									      					<div class="shipping-info">
+									      						<div class="name">Shipping</div>
+									      						<div class="phone">(732) 484-2418</div>
+									      						<div class="email"><a href="mailto:ryan@ryanhossann.com">ryan@ryanhossann.com</a></div>
+									      						<div class="address">7610 Sarah Drive <br>Denver <br> NC <br>28037
+									      						</div>
+									      					</div>
+									      				</div>
+									      			</div>
+									      			<div class="col-xl-6 col-lg-12 d-flex">
+									      				<div class="notes-collapse__body-item">
+									      					<div class="entry-title">
+									      						<h6 class="title">Order Notes</h6>
+									      					</div>
+									      					<div class="order-info">
+									      						<p>Please cut 6 vents on the side of the hood instead of 4. Please add brass around vent slits.</p>
+									      					</div>
+									      				</div>
+									      			</div>
+									      			<div class="col-xl-12 col-lg-12 d-flex">
+									      				<div class="btn-box">
+									      					<a href="#" class="btn btn-border">Send To WRH</a>
+									      					<a href="#" class="btn btn-border">Send To Wilkes</a>
+									      				</div>
+									      			</div>
+									      		</div>
+									      	</div>
+									      </td>
+									    </tr>
+									  </tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row lr-10">
+						<div class="col-xl-8 d-flex">
+							<div class="dashboard-page__order">
+								<div class="dashboard-page__order-header">
+									<div class="navbar-header">
+										<h6 class="title">Past Expected Shipping Date</h6>
+									</div>
+
+									<div class="navbar-collapse">
+										<ul class="navbar-nav ml-auto">
+											<li><a href="#" class="icon-setting-sliders"></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="dashboard-page__order-body">
+									<table class="table table-order">
+									  <thead>
+									    <tr>
+									      <th scope="col">Order Id</th>
+									      <th scope="col">Customer Info</th>
+									      <th scope="col">Order Status</th>
+									      <th scope="col">Shop</th>
+									      <th scope="col">Estimated Shipping Date</th>
+									      <th scope="col">Order Source</th>
+									      <th scope="col">Items</th>
+									      <th scope="col">Files</th>
+									      <th scope="col">Actions</th>
+									    </tr>
+									  </thead>
+									  <tbody>
+									    <tr style="background-color: #FF00001a;">
+									      <td data-title="Order Id">#30524</td>
+									      <td data-title="Customer Info">Sally Jane</td>
+									      <td data-title="Order Status">
+									      	<button class="btn btn-bluesky">Sanding</button>
+									      </td>
+									      <td data-title="Shop" data-toggle="tooltip" title='<h6 class="title">WRH</h6>'>
+									      	<figure class="media-shop">
+									      		<img src="../assets/images/ryan.jpg" class="img-fluid" alt="">
+									      	</figure>
+									      </td>
+									      <td data-title="Estimated Shipping Date">January 31st 2022 (10 days)</td>
+									      <td data-title="Order Source">USCD</td>
+									      <td data-title="Items">Items</td>
+									      <td class="files" data-title="Files" data-toggle="tooltip" data-placement="right" title='<h6 class="title">Order Files</h6><ul class="tooltip-dropdown"><li>BOL</li><li>Shipping Label</li><li>Proof Of Drop Off</li> <li>Damage  Photos</li></ul>'>Files</td>
+									      <td data-title="Actions" class="action-dropdown dropdown">
+									      	<div role="button" class="icon-dots" data-toggle="dropdown"><span></span><span></span><span></span></div>
+									      	<ul class="dropdown-menu dropdown-menu-right">
+									      		<li><a href="#">View</a></li>
+									      		<li><a href="#">Delete</a></li>
+									      	</ul>
+									      </td>
+									    </tr>
+									  </tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-4 d-flex">
+							<div class="dashboard-page__order">
+								<div class="dashboard-page__order-header">
+									<div class="navbar-header">
+										<h6 class="title">Custom Color Match Orders</h6>
+									</div>
+
+									<div class="navbar-collapse">
+										<ul class="navbar-nav ml-auto">
+											<li><a href="#" class="icon-setting-sliders"></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="dashboard-page__order-body">
+
+									<table class="table has--custom-color">
+									  <thead>
+									    <tr>
+									      <th scope="col">Order Id</th>
+									      <th scope="col">Order Status</th>
+									      <th scope="col">Shop</th>
+									      <th scope="col">Status</th>
+									    </tr>
+									  </thead>
+									  <tbody>
+									    <tr style="background-color: #0E9CEE1a;">
+									      <td data-title="Order Id">#45875</td>
+									      <td data-title="Order Status">
+									      	<button class="btn btn-skyblue">Sanding</button>
+									      </td>
+									      <td data-title="Shop" data-toggle="tooltip" title='<h6 class="title">Wilkes</h6>'>
+									      	<figure class="media-shop">
+									      		<img src="../assets/images/ryan.jpg" class="img-fluid" alt="">
+									      	</figure>
+									      </td>
+									      <td data-title="Status" class="staus-dropdown dropdown">
+									      	<button role="button" class="btn btn-waiting"  data-toggle="dropdown">Waiting</button>
+									      	
+									      	<ul class="dropdown-menu dropdown-menu-right">
+									      		<li><a href="#">Received</a></li>
+									      		<li><a href="#">Picked Up</a></li>
+									      		<li><a href="#">Delivered</a></li>
+									      	</ul>
+									      </td>
+									    </tr>
+									  </tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/plugins.js"></script>
+		<script src="../assets/js/scripts.js"></script>
+	</body>
+</html>

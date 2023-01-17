@@ -1,0 +1,64 @@
+.table_container {
+    max-width: 600px;
+    margin: 50px auto;
+    border: 1px solid #999;
+    padding: 20px;
+    background: #fff;
+}
+
+.table_container td,
+th {
+    text-align: left;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.table_container td button,
+.wilkes_delete_all,
+.wilkes_create_row,
+.wilkes_save_data {
+    margin-left: 10px;
+    border: 0;
+    color: #fff;
+    background: #e00c0c;
+    padding: 7px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.wilkes_delete_all{
+    background: red;
+}
+.wilkes_create_row{
+    background: rgb(129 96 255);
+}
+.wilkes_save_data{
+    background: rgb(7, 196, 105);
+    padding: 7px 40px;
+}
+
+.action_btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -20px;
+    margin-top: 2rem;
+}
+.action_btn_add{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.action_btn button {
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+.hidden_row {
+    display: none;
+}
+
+.wilkes_item_id{
+    width: 100%;
+}

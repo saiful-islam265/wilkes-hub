@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'hoodsly-hub';
+    src: url('../../assets/fonts/hoodsly-hub.eot?32198138');
+    src: url('../../assets/fonts/hoodsly-hub.eot?32198138#iefix') format('embedded-opentype'),
+    url('../../assets/fonts/hoodsly-hub.woff2?32198138') format('woff2'),
+    url('../../assets/fonts/hoodsly-hub.woff?32198138') format('woff'),
+    url('../../assets/fonts/hoodsly-hub.ttf?32198138') format('truetype'),
+    url('../../assets/fonts/hoodsly-hub.svg?32198138#hoodsly-hub') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[data-icon]:before {
+    speak: none;
+    line-height: 1;
+    font-family: 'hoodsly-hub';
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    speak: none;
+    line-height: 1;
+    font-family: 'hoodsly-hub';
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-file:before { content: '\e800'; }
+.icon-help:before { content: '\e801'; }
+.icon-home:before { content: '\e802'; }
+.icon-line-chart:before { content: '\e803'; }
+.icon-message:before { content: '\e804'; }
+.icon-notifications:before { content: '\e805'; }
+.icon-paste:before { content: '\e806'; }
+.icon-setting:before { content: '\e807'; }
+.icon-setting-sliders:before { content: '\e808'; }
+.icon-users:before { content: '\e809'; }
+.icon-angle-down:before { content: '\e80a'; }
+.icon-angle-left:before { content: '\e80b'; }
+.icon-angle-right:before { content: '\e80c'; }
+.icon-angle-up:before { content: '\e80d'; }
+.icon-calendar:before { content: '\e80e'; }
+.icon-caret-down:before { content: '\e80f'; }
+.icon-caret-up:before { content: '\e810'; }
+.icon-close:before { content: '\e811'; }
+.icon-email:before { content: '\e812'; }
+.icon-email-open:before { content: '\e813'; }
+.icon-sitemap:before { content: '\f0e8'; }

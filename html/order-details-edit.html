@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Dashboard | Local Delevery</title>
+
+    <!-- Bootstrap -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap"
+          rel="stylesheet">
+    <link href="../assets/css/plugins.css" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="hoodslyhub-user-dashboard">
+
+    <header class="dashboard__header">
+        <nav class="navbar navbar-expand">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-toggle">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+
+                    <a class="navbar-brand" href="index.html">
+                        <img src="../assets/images/logo.svg" class="img-fluid" alt="logo">
+                    </a>
+                </div>
+
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li><a href="#" class="icon-paste"></a></li>
+                        <li><a href="#" class="icon-email-open"></a></li>
+                        <li><a href="#" class="icon-notifications"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav><!-- /nav -->
+    </header><!-- /header -->
+    <div class="header-gutter"></div>
+
+    <div class="dashboard__vertical-navbar" id="simplebar">
+        <nav class="vertical-navbar">
+            <ul class="navbar-nav">
+                <li>
+                    <a href="#">
+								<span class="icon-wrapper">
+									<i class="icon-home"></i>
+								</span>
+                        <span class="text">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="active">
+								<span class="icon-wrapper">
+									<i class="icon-line-chart"></i>
+								</span>
+                        <span class="text">Orders</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+								<span class="icon-wrapper">
+									<i class="icon-email"></i>
+								</span>
+                        <span class="text">Damages</span>
+                        <span class="badge">16</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+								<span class="icon-wrapper">
+									<i class="icon-file"></i>
+								</span>
+                        <span class="text">Wholesale Accounts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+								<span class="icon-wrapper">
+									<i class="icon-users"></i>
+								</span>
+                        <span class="text">Local Delivery</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+								<span class="icon-wrapper">
+									<i class="icon-message"></i>
+								</span>
+                        <span class="text">Video Chats</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+								<span class="icon-wrapper">
+									<i class="icon-calendar"></i>
+								</span>
+                        <span class="text">In Stock Hoods</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+								<span class="icon-wrapper">
+									<i class="icon-help"></i>
+								</span>
+                        <span class="text">Ventilation</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+								<span class="icon-wrapper">
+									<i class="icon-setting"></i>
+								</span>
+                        <span class="text">Settings</span>
+                    </a>
+                </li>
+            </ul>
+
+            <a href="#" class="user-meta mt-auto">
+                <figure class="media">
+                    <img src="../assets/images/user.jpg" alt="">
+                </figure>
+
+                <div class="text">
+                    <div class="name">Mitchell Williamson</div>
+                    <div class="user-id">Customer ID#01223</div>
+                </div>
+            </a>
+        </nav>
+    </div>
+
+    <div class="dashboard-page">
+        <div class="container-fluid">
+            <div class="row lr-10">
+                <div class="col-xl-8 last-none">
+
+                    <div class="row lr-10">
+                        <div class="col-xl-12 col-lg-12">
+                            <div class="dashboard-page__order-detail">
+                                <div class="dashboard-page__order-detail-header">
+                                    <div class="navbar-header">
+                                        <h6 class="title">Order #25614 Details</h6>
+                                    </div>
+
+                                    <div class="navbar-collapse">
+                                        <ul class="navbar-nav ml-auto">
+                                            <li><a href="#" class="icon-setting-sliders"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="dashboard-page__order-detail-body">
+                                    <figure class="media">
+                                        <img src="../assets/images/wood-hood.png" class="img-fluid" alt="">
+                                    </figure>
+
+                                    <div class="text">
+                                        <form>
+                                            <ul class="list-style mb-3">
+                                                <li>
+                                                    <strong>Product Type</strong>
+                                                     <span>:
+                                                        <select name="product-type" class="order-select d-none" id="product-type" placeholder="Product Type">
+                                                            <option value="Wood Hood"selected>Wood Hood</option>
+                                                            <option value="Table Hood">Table Hood</option>
+                                                            <option value="Wood Hoods">Wood Hoods</option>
+                                                            <option value="Tables Hood">Tables Hood</option>
+                                                        </select>
+                                                     </span>
+                                                </li>
+                                                <li>
+                                                    <strong>Style</strong>
+                                                    <span>:
+                                                        <select name="product-style" class="order-select d-none" id="product-style" placeholder="Style">
+                                                            <option value="Angled Straigh"selected>Angled Straight</option>
+                                                            <option value="Straight Hood">Straight Hood</option>
+                                                            <option value="Angled Straighs">Angled Straighst</option>
+                                                            <option value="Straights Hood">Straights Hood</option>
+                                                        </select>
+                                                     </span>
+                                                </li>
+                                                <li>
+                                                    <strong>Finish</strong>
+                                                    <span>:
+                                                        <select name="product-finish" class="order-select d-none" id="product-finish" placeholder="Finish">
+                                                            <option value="Light Gray"selected>Light Gray</option>
+                                                            <option value="Light Blue">Light Blue</option>
+                                                            <option value="Sky Light">Sky Light</option>
+                                                            <option value="Yellow light">Yellow Light</option>
+                                                        </select>
+                                                     </span>
+                                                </li>
+                                                <li>
+                                                    <strong>Size</strong>
+                                                    <span>:
+                                                        <select name="product-size" class="order-select d-none" id="product-size" placeholder="Size">
+                                                            <option value="30' Width x 36' Height"selected>30' Width x 36' Height</option>
+                                                            <option value="36' Width x 40' Height">36' Width x 40' Height</option>
+                                                            <option value="25' Width x 30' Height">25' Width x 30' Height</option>
+                                                            <option value="32' Width x 36' Height">32' Width x 36' Height</option>
+                                                        </select>
+                                                     </span>
+                                                </li>
+                                                <li>
+                                                    <strong>Ventilation</strong>
+                                                    <span>:
+                                                        <select name="product-ventilation" class="order-select d-none" id="product-ventilation" placeholder="Ventilation">
+                                                            <option value="ZLine 698-28"selected>ZLine 698-28</option>
+                                                            <option value="ZLine 698-24">ZLine 698-24</option>
+                                                            <option value="ZLine 698-25">ZLine 698-25</option>
+                                                            <option value="ZLine 698-26">ZLine 698-28</option>
+                                                        </select>
+                                                     </span>
+                                                </li>
+                                                <li>
+                                                    <strong>Trim Type</strong>
+                                                    <span>:
+                                                        <select name="trim-type" class="order-select d-none" id="trim-type" placeholder="Trim Type">
+                                                            <option value="Classic"selected>Classic</option>
+                                                            <option value="Normal">Normal</option>
+                                                            <option value="Goldlen">Goldlen</option>
+                                                            <option value="Premium">Premium</option>
+                                                        </select>
+                                                     </span>
+                                                </li>
+                                                <li>
+                                                    <strong>Trim Options</strong>
+                                                    <span>:
+                                                        <select name="trim-options" class="order-select d-none" id="trim-options" placeholder="Trim Options">
+                                                            <option value="Remove Side Trim"selected>Remove Side Trim</option>
+                                                            <option value="Remove Down Trim">Remove Down Trim</option>
+                                                            <option value="Remove right Trim">Remove right Trim</option>
+                                                            <option value="Remove left Trim">Remove left Trim</option>
+                                                        </select>
+                                                     </span>
+                                                </li>
+                                                <li>
+                                                    <strong>Crown Molding</strong>
+                                                    <span>:
+                                                        <select name="crown-molding" class="order-select d-none" id="crown-molding" placeholder="Crown Molding">
+                                                            <option value="Loose"selected>Loose</option>
+                                                            <option value="Standard">Standard</option>
+                                                            <option value="Loose">Loose</option>
+                                                            <option value="Standard">Standard</option>
+                                                        </select>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <strong>Depth Increase</strong>
+                                                    <span>:
+                                                        <select name="depth-increase" class="order-select d-none" id="depth-increase" placeholder="Depth Increase">
+                                                            <option value="Loose"selected>Standard</option>
+                                                            <option value="Loose">Loose</option>
+                                                            <option value="Standard">Standard</option>
+                                                            <option value="Loose">Loose</option>
+                                                        </select>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <button class="btn btn-bluedark">Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-12">
+                            <div class="dashboard-page__shipping-address">
+                                <div class="dashboard-page__shipping-address-header">
+                                    <div class="navbar-header">
+                                        <h6 class="title">Shipping Adress</h6>
+                                    </div>
+                                </div>
+
+                                <div class="dashboard-page__shipping-address-body">
+                                    <form>
+                                        <input class="form-control" type="text" name="shiping-name" id="shiping-name" placeholder="Name" value="John Doe">
+                                        <input class="form-control" type="text" name="shiping-phone" id="shiping-phone" placeholder="Phone" value="(732) 484-2418">
+                                        <input class="form-control" type="text" name="shiping-email" id="shiping-email" placeholder="Email" value="ryan@ryanhossann.com">
+                                        <textarea class="form-control" name="shiping-address" id="shiping-address" placeholder="Address">7610 Sarah Drive Denver NC 28037</textarea>
+                                        <button class="btn btn-submit">Save Change</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-12">
+                            <div class="dashboard-page__shipping-address">
+                                <div class="dashboard-page__shipping-address-header">
+                                    <div class="navbar-header">
+                                        <h6 class="title">Billing Adress</h6>
+                                    </div>
+                                </div>
+
+                                <div class="dashboard-page__shipping-address-body">
+                                     <form>
+                                        <input class="form-control" type="text" name="shiping-name" id="shiping-name" placeholder="Name" value="Ryan Hossann">
+                                        <input class="form-control" type="text" name="shiping-phone" id="shiping-phone" placeholder="Phone" value="(732) 484-2418">
+                                        <input class="form-control" type="text" name="shiping-email" id="shiping-email" placeholder="Email" value="ryan@ryanhossann.com">
+                                        <textarea class="form-control" name="shiping-address" id="shiping-address" placeholder="Address">7610 Sarah Drive Denver NC 28037</textarea>
+                                        <button class="btn btn-submit">Save Change</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-12 col-lg-12">
+                            <div class="dashboard-page__order">
+                                <div class="dashboard-page__order-header">
+                                    <div class="navbar-header">
+                                        <h6 class="title">Order Communication</h6>
+                                    </div>
+
+                                    <div class="navbar-collapse">
+                                        <ul class="navbar-nav ml-auto">
+                                            <li><a href="#" class="icon-setting-sliders"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="dashboard-page__order-body">
+                                    <figure class="media mt-5">
+                                        <img src="../assets/images/chat.png" class="img-fluid" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="dashboard-page__order">
+                        <div class="dashboard-page__order-header">
+                            <div class="navbar-header">
+                                <h6 class="title">Actions</h6>
+                            </div>
+
+                            <div class="navbar-collapse">
+                                <ul class="navbar-nav ml-auto">
+                                    <li><a href="#" class="icon-setting-sliders"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="dashboard-page__order-body">
+                            <ul class="action-list list-unstyled">
+                                <li><a href="#" class="btn-action">File Damage Claim</a></li>
+                                <li><a href="#" class="btn-action">Edit Order Details</a></li>
+                                <li><a href="#" class="btn-action">Edit BOL/Shipping Label</a></li>
+                                <li><a href="#" class="btn-action">Send Ventilation Tracking</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-page__order">
+                        <div class="dashboard-page__order-header">
+                            <div class="navbar-header">
+                                <h6 class="title">Order History</h6>
+                            </div>
+
+                            <div class="navbar-collapse">
+                                <ul class="navbar-nav ml-auto">
+                                    <li><a href="#" class="icon-setting-sliders"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="dashboard-page__order-body">
+
+                            <div id="history-simplebar">
+                                <ul class="order-history-list list-unstyled">
+                                    <li>
+                                        <span class="text">Order Placed on Hoodsly.com</span>
+                                        <span class="date">{timestamp}</span>
+                                    </li>
+                                    <li>
+                                        <span class="text">Order Sent To WRH With Status: In Production</span>
+                                        <span class="date">{timestamp}</span>
+                                    </li>
+                                    <li>
+                                        <span class="text">Order Placed In HypeMill Delivery Board</span>
+                                        <span class="date">{timestamp} + {notify_user_role_delivery}</span>
+                                    </li>
+                                    <li>
+                                        <span class="text">Note Created: {user} + {view_note}</span>
+                                        <span class="date">{timestamp}</span>
+                                    </li>
+                                    <li>
+                                        <span class="text">Order Edit: {action} ex: Updated Finish</span>
+                                        <span class="date">{timestamp} + {user who performed action}</span>
+                                    </li>
+                                    <li>
+                                        <span class="text">Update: {finish} updated and sent to WRH</span>
+                                        <span class="date">{timestamp} + {notify_wrh}</span>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-page__order">
+                        <div class="dashboard-page__order-header">
+                            <div class="navbar-header">
+                                <h6 class="title">Order Summary</h6>
+                            </div>
+
+                            <div class="navbar-collapse">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="btn-assemble"><a href="#">Assembly</a></li>
+                                    <li><a href="#" class="icon-setting-sliders"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="dashboard-page__order-body">
+                            <div class="order-summary">
+                                <div class="order-summary__shop">
+                                    <figure class="media">
+                                        <img src="../assets/images/ryan.jpg" class="img-fluid" alt="">
+                                    </figure>
+
+                                    <div class="text">Shop: WRH</div>
+                                </div>
+
+                                <ul class="order-summary__list">
+                                    <li><i class="icon-line-chart"></i>Order Created: January 14th 4:30pm</li>
+                                    <li><i class="icon-line-chart"></i>Order Source: Hoodsly</li>
+                                    <li><i class="icon-line-chart"></i>Estimated Shipping Date: February 19th</li>
+                                    <li><i class="icon-line-chart"></i>BOL: {bol_file}</li>
+                                    <li><i class="icon-line-chart"></i>Shipping Label: {shipping_file}</li>
+                                    <li><i class="icon-line-chart"></i>Packing List: {packing_file}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/plugins.js"></script>
+<script src="../assets/js/scripts.js"></script>
+</body>
+</html>
